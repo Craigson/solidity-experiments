@@ -4,4 +4,10 @@ This repo contains a collection of experiments, explorations, and POCs. It's int
 
 # Table of Contents
 
+## Security / Exploits
+
 1. [Exploiting Pseudorandom Number Generators (PRNG) using Salted Contract Creation](./prng_exploit/README.md)
+
+## Oracles
+
+1. [Running API3's QRNG locally]()
