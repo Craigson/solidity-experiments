@@ -13,3 +13,6 @@
 [submodule "ethernaut-x-foundry/lib/openzeppelin-contracts"]
 	path = ethernaut-x-foundry/lib/openzeppelin-contracts
 	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "ethernaut-x-foundry/lib/forge-std"]
+	path = ethernaut-x-foundry/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
