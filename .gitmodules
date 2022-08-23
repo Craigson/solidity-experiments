@@ -10,3 +10,6 @@
 [submodule "api3_qrng/lib/airnode"]
 	path = api3_qrng/lib/airnode
 	url = https://github.com/api3dao/airnode
+[submodule "ethernaut-x-foundry/lib/openzeppelin-contracts"]
+	path = ethernaut-x-foundry/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
