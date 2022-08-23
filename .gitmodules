@@ -7,3 +7,6 @@
 [submodule "qrng_local/lib/airnode"]
 	path = qrng_local/lib/airnode
 	url = https://github.com/api3dao/airnode
+[submodule "api3_qrng/lib/airnode"]
+	path = api3_qrng/lib/airnode
+	url = https://github.com/api3dao/airnode
