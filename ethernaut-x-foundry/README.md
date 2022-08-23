@@ -1,8 +1,40 @@
-# ethernaut-x-foundry
+# Ethernaut using Foundry
 
 This repo contains the scaffolding for completing the Ethernaut challenges in a local dev environment using Foundry. It's a clone of the [original](https://github.com/ciaranmcveigh5/ethernaut-x-foundry) repo, but has had the solutions removed.
 
 My solutions to the challenges can be located in the `src/tests/` folder, using the naming convention `<challenge>.t.sol`.
+
+## Progress
+
+| Status   | Level                                  |
+| -------- | -------------------------------------- |
+| complete | [1. Fallback](src/Fallback)            |
+| complete | [2. Fallout](src/Fallout)              |
+| complete | [3. CoinFlip](src/CoinFlip)            |
+| complete | [4. Telephone](src/Telephone)          |
+| ---      | [5. Token](src/Token)                  |
+| ---      | [6. Delegation](src/Delegation)        |
+| ---      | [7. Force](src/Force)                  |
+| ---      | [8. Vault](src/Vault)                  |
+| ---      | [9. King](src/King)                    |
+| ---      | [10. Re-Entrancy](src/Reentrance)      |
+| ---      | [11. Elevator](src/Elevator)           |
+| ---      | [12. Privacy](src/Privacy)             |
+| ---      | [13. GatekeeperOne](src/GatekeeperOne) |
+| ---      | [14. GatekeeperTwo](src/GatekeeperTwo) |
+| ---      | [15. NaughtCoin](src/NaughtCoin)       |
+| ---      | [16. Preservation](src/Preservation)   |
+| ---      | [17. Recovery](src/Recovery)           |
+| ---      | [18. Magic Number](src/MagicNum)       |
+| ---      | [19. AlienCodex](src/AlienCodex)       |
+| ---      | [20. Denial](src/Denial)               |
+| ---      | [21. Shop](src/Shop)                   |
+| ---      | [22. Dex](src/Dex)                     |
+| ---      | [23. Dex Two](src/DexTwo)              |
+| ---      | [24. PuzzleWallet](src/PuzzleWallet)   |
+| ---      | [25. Motorbike](src/Motorbike)         |
+
+---
 
 **Ethernaut**
 
@@ -34,46 +66,6 @@ foundryup
 forge install
 forge test
 ```
-
-**File Locations**
-
-Individual Levels can be found in their respective folders in the ./src folder.
-
-Eg [Fallback is located in ./src/Fallback/Fallback.sol](src/Fallback/Fallback.sol)
-
-Tests for each level can be found in the ./src/test folder and have the naming convention [LEVEL_NAME].t.sol
-
-Eg [Fallback test are located in ./src/test/Fallback.t.sol](src/test/Fallback.t.sol)
-
-## Levels
-
-| Level                                  |
-| -------------------------------------- |
-| [1. Fallback](src/Fallback)            |
-| [2. Fallout](src/Fallout)              |
-| [3. CoinFlip](src/CoinFlip)            |
-| [4. Telephone](src/Telephone)          |
-| [5. Token](src/Token)                  |
-| [6. Delegation](src/Delegation)        |
-| [7. Force](src/Force)                  |
-| [8. Vault](src/Vault)                  |
-| [9. King](src/King)                    |
-| [10. Re-Entrancy](src/Reentrance)      |
-| [11. Elevator](src/Elevator)           |
-| [12. Privacy](src/Privacy)             |
-| [13. GatekeeperOne](src/GatekeeperOne) |
-| [14. GatekeeperTwo](src/GatekeeperTwo) |
-| [15. NaughtCoin](src/NaughtCoin)       |
-| [16. Preservation](src/Preservation)   |
-| [17. Recovery](src/Recovery)           |
-| [18. Magic Number](src/MagicNum)       |
-| [19. AlienCodex](src/AlienCodex)       |
-| [20. Denial](src/Denial)               |
-| [21. Shop](src/Shop)                   |
-| [22. Dex](src/Dex)                     |
-| [23. Dex Two](src/DexTwo)              |
-| [24. PuzzleWallet](src/PuzzleWallet)   |
-| [25. Motorbike](src/Motorbike)         |
 
 ## References
 
