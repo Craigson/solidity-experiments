@@ -1,7 +1,7 @@
 pragma solidity ^0.8.10;
 
 import "ds-test/test.sol";
-import "../Fallback/FallbackFactory.sol"; // <====== REPLACE THIS
+import "../Fallout/FalloutFactory.sol";
 import "../Ethernaut.sol";
 import "./utils/vm.sol";
 
@@ -23,17 +23,17 @@ contract Template is DSTest {
         /////////////////
 
         // create the factory
-        // SomeFactory someFactory = new SomeFactory(); // <=== Uncomment and replace
+        FalloutFactory falloutFactory = new FalloutFactory();
 
         // register the level
-        // ethernaut.registerLevel(someFactory);
+        ethernaut.registerLevel(falloutFactory);
 
         // start pranking the user
         vm.startPrank(eoaAddress);
 
         // instantiate the level
-        // address levelAddress = ethernaut.createLevelInstance(someFactory);
-        // Some ethernaughtSome = Some(payable(levelAddress));
+        address levelAddress = ethernaut.createLevelInstance(falloutFactory);
+        Fallout ethernautFallout = Fallout(payable(levelAddress));
 
         //////////////////
         // LEVEL ATTACK //
