@@ -5,7 +5,9 @@ import "../Fallback/FallbackFactory.sol"; // <====== REPLACE THIS
 import "../Ethernaut.sol";
 import "./utils/vm.sol";
 
-contract Template is DSTest {
+contract Template is
+    DSTest // <================ Change the Contract Name
+{
     Vm vm = Vm(address(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D));
     Ethernaut ethernaut;
     address eoaAddress = address(100);
@@ -13,14 +15,13 @@ contract Template is DSTest {
     function setUp() public {
         // Setup instance of the Ethernaut contract
         ethernaut = new Ethernaut();
-        // Deal EOA address some ether
-        vm.deal(eoaAddress, 5 ether);
     }
 
     function testFallbackHack() public {
-        /////////////////
-        // LEVEL SETUP //
-        /////////////////
+        // <======= Change the test name
+        // ========================= LEVEL SETUP
+        // fund the EOA
+        vm.deal(eoaAddress, 5 ether);
 
         // create the factory
         // SomeFactory someFactory = new SomeFactory(); // <=== Uncomment and replace
@@ -35,13 +36,9 @@ contract Template is DSTest {
         // address levelAddress = ethernaut.createLevelInstance(someFactory);
         // Some ethernaughtSome = Some(payable(levelAddress));
 
-        //////////////////
-        // LEVEL ATTACK //
-        //////////////////
+        // =========================  ATTACK
 
-        //////////////////////
-        // LEVEL SUBMISSION //
-        //////////////////////
+        // ========================= SUBMISSION
 
         // bool levelSuccessfullyPassed = ethernaut.submitLevelInstance(
         //     payable(levelAddress)
