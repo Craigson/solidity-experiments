@@ -1,4 +1,4 @@
-pragma solidity ^0.8.10;
+pragma solidity 0.8.10;
 
 import "ds-test/test.sol";
 import "../Fallback/FallbackFactory.sol";
