@@ -4,6 +4,10 @@ This repo contains a collection of experiments, explorations, and POCs. It's int
 
 # Table of Contents
 
+## Challenges
+
+1. [Ethernaut w/ Foundry](./ethernaut-x-foundry/README.md)
+
 ## Security / Exploits
 
 1. [Exploiting Pseudorandom Number Generators (PRNG) using Salted Contract Creation](./prng_exploit/README.md)
