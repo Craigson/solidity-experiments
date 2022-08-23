@@ -4,3 +4,6 @@
 [submodule "qrng_local/lib/openzeppelin-contracts"]
 	path = qrng_local/lib/openzeppelin-contracts
 	url = https://github.com/openzeppelin/openzeppelin-contracts
+[submodule "qrng_local/lib/airnode"]
+	path = qrng_local/lib/airnode
+	url = https://github.com/api3dao/airnode
