@@ -1,6 +1,8 @@
 # ethernaut-x-foundry
 
-This repo contains the scaffolding for completing the Ethernaut challenges in a local dev environment using Foundry. It's a clone of the [original](https://github.com/ciaranmcveigh5/ethernaut-x-foundry), but has had the solutions removed.
+This repo contains the scaffolding for completing the Ethernaut challenges in a local dev environment using Foundry. It's a clone of the [original](https://github.com/ciaranmcveigh5/ethernaut-x-foundry) repo, but has had the solutions removed.
+
+My solutions to the challenges can be located in the `src/tests/` folder, using the naming convention `<challenge>.t.sol`.
 
 **Ethernaut**
 
