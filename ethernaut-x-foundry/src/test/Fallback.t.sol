@@ -33,7 +33,6 @@ contract FallbackTest is DSTest {
         //////////////////
 
         // add a contribution
-
         ethernautFallback.contribute{value: 1 wei}();
         assertEq(ethernautFallback.getContribution(), 1 wei);
 
