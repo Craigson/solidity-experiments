@@ -14,11 +14,11 @@ contract FallbackTest is DSTest {
         // Setup instance of the Ethernaut contract
         ethernaut = new Ethernaut();
         // Deal EOA address some ether
-        // vm.deal(eoaAddress, 5 ether);
+        // vm.deal(eoaAddress, 5 ether); // <======== DOESN'T WORK
     }
 
     function testFallbackHack() public {
-        vm.deal(eoaAddress, 5 ether);
+        vm.deal(eoaAddress, 5 ether); // <=========== WORKS HERE
         /////////////////
         // LEVEL SETUP //
         /////////////////
