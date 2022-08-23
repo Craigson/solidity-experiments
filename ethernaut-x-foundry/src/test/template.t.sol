@@ -5,7 +5,7 @@ import "../Fallback/FallbackFactory.sol";
 import "../Ethernaut.sol";
 import "./utils/vm.sol";
 
-contract FallbackTest is DSTest {
+contract Template is DSTest {
     Vm vm = Vm(address(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D));
     Ethernaut ethernaut;
     address eoaAddress = address(100);
@@ -21,6 +21,10 @@ contract FallbackTest is DSTest {
         /////////////////
         // LEVEL SETUP //
         /////////////////
+        // create the factory
+
+        // register the level
+        vm.startPrank(eoaAddress);
 
         //////////////////
         // LEVEL ATTACK //
@@ -30,10 +34,10 @@ contract FallbackTest is DSTest {
         // LEVEL SUBMISSION //
         //////////////////////
 
-        bool levelSuccessfullyPassed = ethernaut.submitLevelInstance(
-            payable(levelAddress)
-        );
+        // bool levelSuccessfullyPassed = ethernaut.submitLevelInstance(
+        //     payable(levelAddress)
+        // );
         vm.stopPrank();
-        assert(levelSuccessfullyPassed);
+        // assert(levelSuccessfullyPassed);
     }
 }

