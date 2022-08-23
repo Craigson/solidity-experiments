@@ -21,11 +21,6 @@ contract FallbackTest is DSTest {
         /////////////////
         // LEVEL SETUP //
         /////////////////
-        FallbackFactory fallbackFactory = new FallbackFactory();
-        ethernaut.registerLevel(fallbackFactory);
-        vm.startPrank(eoaAddress);
-        address levelAddress = ethernaut.createLevelInstance(fallbackFactory);
-        Fallback ethernautFallback = Fallback(payable(levelAddress));
 
         //////////////////
         // LEVEL ATTACK //
