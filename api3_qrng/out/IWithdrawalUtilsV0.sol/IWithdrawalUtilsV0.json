@@ -146,19 +146,19 @@
   },
   "ast": {
     "absolutePath": "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IWithdrawalUtilsV0.sol",
-    "id": 560,
+    "id": 6515,
     "exportedSymbols": {
       "IWithdrawalUtilsV0": [
-        559
+        6514
       ]
     },
     "nodeType": "SourceUnit",
-    "src": "32:809:3",
+    "src": "32:809:8",
     "nodes": [
       {
-        "id": 513,
+        "id": 6468,
         "nodeType": "PragmaDirective",
-        "src": "32:23:3",
+        "src": "32:23:8",
         "literals": [
           "solidity",
           "^",
@@ -167,32 +167,31 @@
         ]
       },
       {
-        "id": 559,
+        "id": 6514,
         "nodeType": "ContractDefinition",
-        "src": "57:783:3",
+        "src": "57:783:8",
         "nodes": [
           {
-            "id": 523,
+            "id": 6478,
             "nodeType": "EventDefinition",
-            "src": "92:174:3",
+            "src": "92:174:8",
             "anonymous": false,
-            "eventSelector": "d48d52c7c6d0c940f3f8d07591e1800ef3a70daf79929a97ccd80b4494769fc7",
             "name": "RequestedWithdrawal",
-            "nameLocation": "98:19:3",
+            "nameLocation": "98:19:8",
             "parameters": {
-              "id": 522,
+              "id": 6477,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 515,
+                  "id": 6470,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "airnode",
-                  "nameLocation": "143:7:3",
+                  "nameLocation": "143:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 523,
-                  "src": "127:23:3",
+                  "scope": 6478,
+                  "src": "127:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -200,10 +199,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 514,
+                    "id": 6469,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "127:7:3",
+                    "src": "127:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -214,14 +213,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 517,
+                  "id": 6472,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "sponsor",
-                  "nameLocation": "176:7:3",
+                  "nameLocation": "176:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 523,
-                  "src": "160:23:3",
+                  "scope": 6478,
+                  "src": "160:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -229,10 +228,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 516,
+                    "id": 6471,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "160:7:3",
+                    "src": "160:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -243,14 +242,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 519,
+                  "id": 6474,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "withdrawalRequestId",
-                  "nameLocation": "209:19:3",
+                  "nameLocation": "209:19:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 523,
-                  "src": "193:35:3",
+                  "scope": 6478,
+                  "src": "193:35:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -258,10 +257,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 518,
+                    "id": 6473,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "193:7:3",
+                    "src": "193:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -271,14 +270,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 521,
+                  "id": 6476,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "sponsorWallet",
-                  "nameLocation": "246:13:3",
+                  "nameLocation": "246:13:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 523,
-                  "src": "238:21:3",
+                  "scope": 6478,
+                  "src": "238:21:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -286,10 +285,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 520,
+                    "id": 6475,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "238:7:3",
+                    "src": "238:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -299,31 +298,30 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "117:148:3"
+              "src": "117:148:8"
             }
           },
           {
-            "id": 535,
+            "id": 6490,
             "nodeType": "EventDefinition",
-            "src": "272:198:3",
+            "src": "272:198:8",
             "anonymous": false,
-            "eventSelector": "adb4840bbd5f924665ae7e0e0c83de5c0fb40a98c9b57dba53a6c978127a622e",
             "name": "FulfilledWithdrawal",
-            "nameLocation": "278:19:3",
+            "nameLocation": "278:19:8",
             "parameters": {
-              "id": 534,
+              "id": 6489,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 525,
+                  "id": 6480,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "airnode",
-                  "nameLocation": "323:7:3",
+                  "nameLocation": "323:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 535,
-                  "src": "307:23:3",
+                  "scope": 6490,
+                  "src": "307:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -331,10 +329,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 524,
+                    "id": 6479,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "307:7:3",
+                    "src": "307:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -345,14 +343,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 527,
+                  "id": 6482,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "sponsor",
-                  "nameLocation": "356:7:3",
+                  "nameLocation": "356:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 535,
-                  "src": "340:23:3",
+                  "scope": 6490,
+                  "src": "340:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -360,10 +358,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 526,
+                    "id": 6481,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "340:7:3",
+                    "src": "340:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -374,14 +372,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 529,
+                  "id": 6484,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "withdrawalRequestId",
-                  "nameLocation": "389:19:3",
+                  "nameLocation": "389:19:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 535,
-                  "src": "373:35:3",
+                  "scope": 6490,
+                  "src": "373:35:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -389,10 +387,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 528,
+                    "id": 6483,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "373:7:3",
+                    "src": "373:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -402,14 +400,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 531,
+                  "id": 6486,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "sponsorWallet",
-                  "nameLocation": "426:13:3",
+                  "nameLocation": "426:13:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 535,
-                  "src": "418:21:3",
+                  "scope": 6490,
+                  "src": "418:21:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -417,10 +415,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 530,
+                    "id": 6485,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "418:7:3",
+                    "src": "418:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -431,14 +429,14 @@
                 },
                 {
                   "constant": false,
-                  "id": 533,
+                  "id": 6488,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "amount",
-                  "nameLocation": "457:6:3",
+                  "nameLocation": "457:6:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 535,
-                  "src": "449:14:3",
+                  "scope": 6490,
+                  "src": "449:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -446,10 +444,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 532,
+                    "id": 6487,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "449:7:3",
+                    "src": "449:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -458,32 +456,32 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "297:172:3"
+              "src": "297:172:8"
             }
           },
           {
-            "id": 542,
+            "id": 6497,
             "nodeType": "FunctionDefinition",
-            "src": "476:76:3",
+            "src": "476:76:8",
             "functionSelector": "1d414cbd",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "requestWithdrawal",
-            "nameLocation": "485:17:3",
+            "nameLocation": "485:17:8",
             "parameters": {
-              "id": 540,
+              "id": 6495,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 537,
+                  "id": 6492,
                   "mutability": "mutable",
                   "name": "airnode",
-                  "nameLocation": "511:7:3",
+                  "nameLocation": "511:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 542,
-                  "src": "503:15:3",
+                  "scope": 6497,
+                  "src": "503:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -491,10 +489,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 536,
+                    "id": 6491,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "503:7:3",
+                    "src": "503:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -505,13 +503,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 539,
+                  "id": 6494,
                   "mutability": "mutable",
                   "name": "sponsorWallet",
-                  "nameLocation": "528:13:3",
+                  "nameLocation": "528:13:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 542,
-                  "src": "520:21:3",
+                  "scope": 6497,
+                  "src": "520:21:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -519,10 +517,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 538,
+                    "id": 6493,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "520:7:3",
+                    "src": "520:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -532,42 +530,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "502:40:3"
+              "src": "502:40:8"
             },
             "returnParameters": {
-              "id": 541,
+              "id": 6496,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "551:0:3"
+              "src": "551:0:8"
             },
-            "scope": 559,
+            "scope": 6514,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 551,
+            "id": 6506,
             "nodeType": "FunctionDefinition",
-            "src": "558:137:3",
+            "src": "558:137:8",
             "functionSelector": "3c7fe5e3",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "fulfillWithdrawal",
-            "nameLocation": "567:17:3",
+            "nameLocation": "567:17:8",
             "parameters": {
-              "id": 549,
+              "id": 6504,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 544,
+                  "id": 6499,
                   "mutability": "mutable",
                   "name": "withdrawalRequestId",
-                  "nameLocation": "602:19:3",
+                  "nameLocation": "602:19:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 551,
-                  "src": "594:27:3",
+                  "scope": 6506,
+                  "src": "594:27:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -575,10 +573,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 543,
+                    "id": 6498,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "594:7:3",
+                    "src": "594:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -588,13 +586,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 546,
+                  "id": 6501,
                   "mutability": "mutable",
                   "name": "airnode",
-                  "nameLocation": "639:7:3",
+                  "nameLocation": "639:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 551,
-                  "src": "631:15:3",
+                  "scope": 6506,
+                  "src": "631:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -602,10 +600,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 545,
+                    "id": 6500,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "631:7:3",
+                    "src": "631:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -616,13 +614,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 548,
+                  "id": 6503,
                   "mutability": "mutable",
                   "name": "sponsor",
-                  "nameLocation": "664:7:3",
+                  "nameLocation": "664:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 551,
-                  "src": "656:15:3",
+                  "scope": 6506,
+                  "src": "656:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -630,10 +628,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 547,
+                    "id": 6502,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "656:7:3",
+                    "src": "656:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -643,42 +641,42 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "584:93:3"
+              "src": "584:93:8"
             },
             "returnParameters": {
-              "id": 550,
+              "id": 6505,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "694:0:3"
+              "src": "694:0:8"
             },
-            "scope": 559,
+            "scope": 6514,
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 558,
+            "id": 6513,
             "nodeType": "FunctionDefinition",
-            "src": "701:137:3",
+            "src": "701:137:8",
             "functionSelector": "f8fa73a1",
             "implemented": false,
             "kind": "function",
             "modifiers": [],
             "name": "sponsorToWithdrawalRequestCount",
-            "nameLocation": "710:31:3",
+            "nameLocation": "710:31:8",
             "parameters": {
-              "id": 554,
+              "id": 6509,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 553,
+                  "id": 6508,
                   "mutability": "mutable",
                   "name": "sponsor",
-                  "nameLocation": "750:7:3",
+                  "nameLocation": "750:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 558,
-                  "src": "742:15:3",
+                  "scope": 6513,
+                  "src": "742:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -686,10 +684,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 552,
+                    "id": 6507,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "742:7:3",
+                    "src": "742:7:8",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -699,21 +697,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "741:17:3"
+              "src": "741:17:8"
             },
             "returnParameters": {
-              "id": 557,
+              "id": 6512,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 556,
+                  "id": 6511,
                   "mutability": "mutable",
                   "name": "withdrawalRequestCount",
-                  "nameLocation": "814:22:3",
+                  "nameLocation": "814:22:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 558,
-                  "src": "806:30:3",
+                  "scope": 6513,
+                  "src": "806:30:8",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -721,10 +719,10 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 555,
+                    "id": 6510,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
-                    "src": "806:7:3",
+                    "src": "806:7:8",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
@@ -733,9 +731,9 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "805:32:3"
+              "src": "805:32:8"
             },
-            "scope": 559,
+            "scope": 6514,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -748,15 +746,15 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          559
+          6514
         ],
         "name": "IWithdrawalUtilsV0",
-        "nameLocation": "67:18:3",
-        "scope": 560,
+        "nameLocation": "67:18:8",
+        "scope": 6515,
         "usedErrors": []
       }
     ],
     "license": "MIT"
   },
-  "id": 3
+  "id": 8
 }

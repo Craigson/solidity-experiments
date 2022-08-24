@@ -178,6 +178,19 @@
       {
         "inputs": [
           {
+            "internalType": "uint256",
+            "name": "num",
+            "type": "uint256"
+          }
+        ],
+        "name": "requestArrayOfUints",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
             "internalType": "address",
             "name": "_airnode",
             "type": "address"
@@ -315,11 +328,11 @@
       ]
     },
     "src/Requester.sol": {
-      "keccak256": "0x8d1c2b89afce52a9aa715d8b6563d14b7094d0467f3d63d1723d6068ddfded94",
+      "keccak256": "0x539581cb901e14c2994022ef0d5e9e37fececc65e262d5a8e77d2049af2edfbf",
       "license": "UNLICENSED",
       "urls": [
-        "bzz-raw://51d54ca2ef2d03a2c9f06481f963fa9aaa383979a43efb47b00535ca7d65f03d",
-        "dweb:/ipfs/QmNuT83XgJHjKYTM4BLkgoWtvWrJAvMvrsJqaAhHPfY4G4"
+        "bzz-raw://40d13325c60da4715e1bbcc180c034b0bc61f590e95e327d44fd9f66b72e2b1c",
+        "dweb:/ipfs/Qmb4gKLfkyWEps2iKkcr8EdKQxPAqroQJuhFc9EfuD9j58"
       ]
     }
   },

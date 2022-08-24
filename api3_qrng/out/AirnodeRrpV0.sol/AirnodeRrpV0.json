@@ -850,25 +850,25 @@
         652
       ],
       "ECDSA": [
-        23417
+        6090
       ],
       "IAirnodeRrpV0": [
-        1125
+        6378
       ],
       "IAuthorizationUtilsV0": [
-        1169
+        6422
       ],
       "IAuthorizerV0": [
         17
       ],
       "ITemplateUtilsV0": [
-        1219
+        6472
       ],
       "IWithdrawalUtilsV0": [
-        1267
+        6520
       ],
       "Strings": [
-        23056
+        5729
       ],
       "TemplateUtilsV0": [
         813
@@ -898,7 +898,7 @@
         "file": "@openzeppelin/contracts/utils/cryptography/ECDSA.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 498,
-        "sourceUnit": 23418,
+        "sourceUnit": 6091,
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -946,7 +946,7 @@
         "file": "./interfaces/IAirnodeRrpV0.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 498,
-        "sourceUnit": 1126,
+        "sourceUnit": 6379,
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -963,7 +963,7 @@
               "id": 34,
               "name": "ECDSA",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 23417,
+              "referencedDeclaration": 6090,
               "src": "471:5:1"
             },
             "typeName": {
@@ -982,7 +982,7 @@
             "nodeType": "VariableDeclaration",
             "src": "587:114:1",
             "baseFunctions": [
-              1110
+              6363
             ],
             "constant": false,
             "documentation": {
@@ -1063,7 +1063,7 @@
             "nodeType": "VariableDeclaration",
             "src": "879:74:1",
             "baseFunctions": [
-              1117
+              6370
             ],
             "constant": false,
             "documentation": {
@@ -1516,7 +1516,7 @@
                       "name": "SetSponsorshipStatus",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 962,
+                      "referencedDeclaration": 6215,
                       "src": "2266:20:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$_t_bool_$returns$__$",
@@ -1545,7 +1545,7 @@
               ]
             },
             "baseFunctions": [
-              1033
+              6286
             ],
             "documentation": {
               "id": 56,
@@ -3102,7 +3102,7 @@
                       "name": "MadeTemplateRequest",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 986,
+                      "referencedDeclaration": 6239,
                       "src": "4763:19:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes32_$_t_uint256_$_t_uint256_$_t_address_$_t_bytes32_$_t_address_$_t_address_$_t_address_$_t_bytes4_$_t_bytes_memory_ptr_$returns$__$",
@@ -3131,7 +3131,7 @@
               ]
             },
             "baseFunctions": [
-              1050
+              6303
             ],
             "documentation": {
               "id": 95,
@@ -4752,7 +4752,7 @@
                       "name": "MadeFullRequest",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1010,
+                      "referencedDeclaration": 6263,
                       "src": "7350:15:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes32_$_t_uint256_$_t_uint256_$_t_address_$_t_bytes32_$_t_address_$_t_address_$_t_address_$_t_bytes4_$_t_bytes_memory_ptr_$returns$__$",
@@ -4781,7 +4781,7 @@
               ]
             },
             "baseFunctions": [
-              1069
+              6322
             ],
             "documentation": {
               "id": 218,
@@ -5490,7 +5490,7 @@
                                     "lValueRequested": false,
                                     "memberName": "toEthSignedMessageHash",
                                     "nodeType": "MemberAccess",
-                                    "referencedDeclaration": 23374,
+                                    "referencedDeclaration": 6047,
                                     "src": "9646:88:1",
                                     "typeDescriptions": {
                                       "typeIdentifier": "t_function_internal_pure$_t_bytes32_$returns$_t_bytes32_$bound_to$_t_bytes32_$",
@@ -5533,7 +5533,7 @@
                             "lValueRequested": false,
                             "memberName": "recover",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 23183,
+                            "referencedDeclaration": 5856,
                             "src": "9628:130:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_pure$_t_bytes32_$_t_bytes_memory_ptr_$returns$_t_address_$bound_to$_t_bytes32_$",
@@ -5977,7 +5977,7 @@
                             "name": "FailedRequest",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1026,
+                            "referencedDeclaration": 6279,
                             "src": "10259:13:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes32_$_t_string_memory_ptr_$returns$__$",
@@ -6072,7 +6072,7 @@
                             "name": "FulfilledRequest",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1018,
+                            "referencedDeclaration": 6271,
                             "src": "10112:16:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$__$",
@@ -6104,7 +6104,7 @@
               ]
             },
             "baseFunctions": [
-              1088
+              6341
             ],
             "documentation": {
               "id": 337,
@@ -6765,7 +6765,7 @@
                       "name": "FailedRequest",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1026,
+                      "referencedDeclaration": 6279,
                       "src": "11569:13:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_bytes32_$_t_string_memory_ptr_$returns$__$",
@@ -6794,7 +6794,7 @@
               ]
             },
             "baseFunctions": [
-              1101
+              6354
             ],
             "documentation": {
               "id": 431,
@@ -7127,7 +7127,7 @@
               ]
             },
             "baseFunctions": [
-              1124
+              6377
             ],
             "documentation": {
               "id": 476,
@@ -7264,7 +7264,7 @@
               "id": 32,
               "name": "IAirnodeRrpV0",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1125,
+              "referencedDeclaration": 6378,
               "src": "445:13:1"
             },
             "id": 33,
@@ -7284,13 +7284,13 @@
         "fullyImplemented": true,
         "linearizedBaseContracts": [
           497,
-          1125,
+          6378,
           943,
-          1267,
+          6520,
           813,
-          1219,
+          6472,
           652,
-          1169
+          6422
         ],
         "name": "AirnodeRrpV0",
         "nameLocation": "355:12:1",

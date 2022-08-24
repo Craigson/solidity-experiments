@@ -139,7 +139,7 @@
     "id": 814,
     "exportedSymbols": {
       "ITemplateUtilsV0": [
-        1219
+        6472
       ],
       "TemplateUtilsV0": [
         813
@@ -167,7 +167,7 @@
         "file": "./interfaces/ITemplateUtilsV0.sol",
         "nameLocation": "-1:-1:-1",
         "scope": 814,
-        "sourceUnit": 1220,
+        "sourceUnit": 6473,
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -275,7 +275,7 @@
             "nodeType": "VariableDeclaration",
             "src": "356:54:3",
             "baseFunctions": [
-              1218
+              6471
             ],
             "constant": false,
             "documentation": {
@@ -878,7 +878,7 @@
                       "name": "CreatedTemplate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1181,
+                      "referencedDeclaration": 6434,
                       "src": "1829:15:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$_t_address_$_t_bytes32_$_t_bytes_memory_ptr_$returns$__$",
@@ -907,7 +907,7 @@
               ]
             },
             "baseFunctions": [
-              1192
+              6445
             ],
             "documentation": {
               "id": 673,
@@ -1915,7 +1915,7 @@
               ]
             },
             "baseFunctions": [
-              1207
+              6460
             ],
             "documentation": {
               "id": 725,
@@ -2107,7 +2107,7 @@
               "id": 657,
               "name": "ITemplateUtilsV0",
               "nodeType": "IdentifierPath",
-              "referencedDeclaration": 1219,
+              "referencedDeclaration": 6472,
               "src": "184:16:3"
             },
             "id": 658,
@@ -2127,7 +2127,7 @@
         "fullyImplemented": true,
         "linearizedBaseContracts": [
           813,
-          1219
+          6472
         ],
         "name": "TemplateUtilsV0",
         "nameLocation": "165:15:3",

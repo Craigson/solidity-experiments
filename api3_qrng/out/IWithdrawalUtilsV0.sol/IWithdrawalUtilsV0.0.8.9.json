@@ -146,17 +146,17 @@
   },
   "ast": {
     "absolutePath": "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IWithdrawalUtilsV0.sol",
-    "id": 1268,
+    "id": 6521,
     "exportedSymbols": {
       "IWithdrawalUtilsV0": [
-        1267
+        6520
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:809:8",
     "nodes": [
       {
-        "id": 1221,
+        "id": 6474,
         "nodeType": "PragmaDirective",
         "src": "32:23:8",
         "literals": [
@@ -167,30 +167,30 @@
         ]
       },
       {
-        "id": 1267,
+        "id": 6520,
         "nodeType": "ContractDefinition",
         "src": "57:783:8",
         "nodes": [
           {
-            "id": 1231,
+            "id": 6484,
             "nodeType": "EventDefinition",
             "src": "92:174:8",
             "anonymous": false,
             "name": "RequestedWithdrawal",
             "nameLocation": "98:19:8",
             "parameters": {
-              "id": 1230,
+              "id": 6483,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1223,
+                  "id": 6476,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "airnode",
                   "nameLocation": "143:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1231,
+                  "scope": 6484,
                   "src": "127:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -199,7 +199,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1222,
+                    "id": 6475,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "127:7:8",
@@ -213,13 +213,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1225,
+                  "id": 6478,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "sponsor",
                   "nameLocation": "176:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1231,
+                  "scope": 6484,
                   "src": "160:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -228,7 +228,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1224,
+                    "id": 6477,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "160:7:8",
@@ -242,13 +242,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1227,
+                  "id": 6480,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "withdrawalRequestId",
                   "nameLocation": "209:19:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1231,
+                  "scope": 6484,
                   "src": "193:35:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -257,7 +257,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1226,
+                    "id": 6479,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "193:7:8",
@@ -270,13 +270,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1229,
+                  "id": 6482,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "sponsorWallet",
                   "nameLocation": "246:13:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1231,
+                  "scope": 6484,
                   "src": "238:21:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -285,7 +285,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1228,
+                    "id": 6481,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "238:7:8",
@@ -302,25 +302,25 @@
             }
           },
           {
-            "id": 1243,
+            "id": 6496,
             "nodeType": "EventDefinition",
             "src": "272:198:8",
             "anonymous": false,
             "name": "FulfilledWithdrawal",
             "nameLocation": "278:19:8",
             "parameters": {
-              "id": 1242,
+              "id": 6495,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1233,
+                  "id": 6486,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "airnode",
                   "nameLocation": "323:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1243,
+                  "scope": 6496,
                   "src": "307:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -329,7 +329,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1232,
+                    "id": 6485,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "307:7:8",
@@ -343,13 +343,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1235,
+                  "id": 6488,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "sponsor",
                   "nameLocation": "356:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1243,
+                  "scope": 6496,
                   "src": "340:23:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -358,7 +358,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1234,
+                    "id": 6487,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "340:7:8",
@@ -372,13 +372,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1237,
+                  "id": 6490,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "withdrawalRequestId",
                   "nameLocation": "389:19:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1243,
+                  "scope": 6496,
                   "src": "373:35:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -387,7 +387,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1236,
+                    "id": 6489,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "373:7:8",
@@ -400,13 +400,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1239,
+                  "id": 6492,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "sponsorWallet",
                   "nameLocation": "426:13:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1243,
+                  "scope": 6496,
                   "src": "418:21:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -415,7 +415,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1238,
+                    "id": 6491,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "418:7:8",
@@ -429,13 +429,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 1241,
+                  "id": 6494,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "amount",
                   "nameLocation": "457:6:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1243,
+                  "scope": 6496,
                   "src": "449:14:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -444,7 +444,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1240,
+                    "id": 6493,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "449:7:8",
@@ -460,7 +460,7 @@
             }
           },
           {
-            "id": 1250,
+            "id": 6503,
             "nodeType": "FunctionDefinition",
             "src": "476:76:8",
             "functionSelector": "1d414cbd",
@@ -470,17 +470,17 @@
             "name": "requestWithdrawal",
             "nameLocation": "485:17:8",
             "parameters": {
-              "id": 1248,
+              "id": 6501,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1245,
+                  "id": 6498,
                   "mutability": "mutable",
                   "name": "airnode",
                   "nameLocation": "511:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1250,
+                  "scope": 6503,
                   "src": "503:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -489,7 +489,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1244,
+                    "id": 6497,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "503:7:8",
@@ -503,12 +503,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 1247,
+                  "id": 6500,
                   "mutability": "mutable",
                   "name": "sponsorWallet",
                   "nameLocation": "528:13:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1250,
+                  "scope": 6503,
                   "src": "520:21:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -517,7 +517,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1246,
+                    "id": 6499,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "520:7:8",
@@ -533,18 +533,18 @@
               "src": "502:40:8"
             },
             "returnParameters": {
-              "id": 1249,
+              "id": 6502,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "551:0:8"
             },
-            "scope": 1267,
+            "scope": 6520,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 1259,
+            "id": 6512,
             "nodeType": "FunctionDefinition",
             "src": "558:137:8",
             "functionSelector": "3c7fe5e3",
@@ -554,17 +554,17 @@
             "name": "fulfillWithdrawal",
             "nameLocation": "567:17:8",
             "parameters": {
-              "id": 1257,
+              "id": 6510,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1252,
+                  "id": 6505,
                   "mutability": "mutable",
                   "name": "withdrawalRequestId",
                   "nameLocation": "602:19:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1259,
+                  "scope": 6512,
                   "src": "594:27:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -573,7 +573,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1251,
+                    "id": 6504,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "594:7:8",
@@ -586,12 +586,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 1254,
+                  "id": 6507,
                   "mutability": "mutable",
                   "name": "airnode",
                   "nameLocation": "639:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1259,
+                  "scope": 6512,
                   "src": "631:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -600,7 +600,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1253,
+                    "id": 6506,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "631:7:8",
@@ -614,12 +614,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 1256,
+                  "id": 6509,
                   "mutability": "mutable",
                   "name": "sponsor",
                   "nameLocation": "664:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1259,
+                  "scope": 6512,
                   "src": "656:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -628,7 +628,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1255,
+                    "id": 6508,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "656:7:8",
@@ -644,18 +644,18 @@
               "src": "584:93:8"
             },
             "returnParameters": {
-              "id": 1258,
+              "id": 6511,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "694:0:8"
             },
-            "scope": 1267,
+            "scope": 6520,
             "stateMutability": "payable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 1266,
+            "id": 6519,
             "nodeType": "FunctionDefinition",
             "src": "701:137:8",
             "functionSelector": "f8fa73a1",
@@ -665,17 +665,17 @@
             "name": "sponsorToWithdrawalRequestCount",
             "nameLocation": "710:31:8",
             "parameters": {
-              "id": 1262,
+              "id": 6515,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1261,
+                  "id": 6514,
                   "mutability": "mutable",
                   "name": "sponsor",
                   "nameLocation": "750:7:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1266,
+                  "scope": 6519,
                   "src": "742:15:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -684,7 +684,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1260,
+                    "id": 6513,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "742:7:8",
@@ -700,17 +700,17 @@
               "src": "741:17:8"
             },
             "returnParameters": {
-              "id": 1265,
+              "id": 6518,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1264,
+                  "id": 6517,
                   "mutability": "mutable",
                   "name": "withdrawalRequestCount",
                   "nameLocation": "814:22:8",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1266,
+                  "scope": 6519,
                   "src": "806:30:8",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -719,7 +719,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 1263,
+                    "id": 6516,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "806:7:8",
@@ -733,7 +733,7 @@
               ],
               "src": "805:32:8"
             },
-            "scope": 1267,
+            "scope": 6520,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -746,11 +746,11 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          1267
+          6520
         ],
         "name": "IWithdrawalUtilsV0",
         "nameLocation": "67:18:8",
-        "scope": 1268,
+        "scope": 6521,
         "usedErrors": []
       }
     ],

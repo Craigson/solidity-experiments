@@ -263,7 +263,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IAirnodeRrpV0": {
-          "0.8.9+commit.e5eed63a.Darwin.appleclang": "IAirnodeRrpV0.sol/IAirnodeRrpV0.0.8.9.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "IAirnodeRrpV0.sol/IAirnodeRrpV0.0.8.16.json"
         }
       }
     },
@@ -302,7 +302,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IAuthorizationUtilsV0": {
-          "0.8.9+commit.e5eed63a.Darwin.appleclang": "IAuthorizationUtilsV0.sol/IAuthorizationUtilsV0.0.8.9.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "IAuthorizationUtilsV0.sol/IAuthorizationUtilsV0.0.8.16.json"
         }
       }
     },
@@ -341,7 +341,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "ITemplateUtilsV0": {
-          "0.8.9+commit.e5eed63a.Darwin.appleclang": "ITemplateUtilsV0.sol/ITemplateUtilsV0.0.8.9.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "ITemplateUtilsV0.sol/ITemplateUtilsV0.0.8.16.json"
         }
       }
     },
@@ -380,7 +380,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IWithdrawalUtilsV0": {
-          "0.8.9+commit.e5eed63a.Darwin.appleclang": "IWithdrawalUtilsV0.sol/IWithdrawalUtilsV0.0.8.9.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "IWithdrawalUtilsV0.sol/IWithdrawalUtilsV0.0.8.16.json"
         }
       }
     },
@@ -506,7 +506,7 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Script": {
-          "0.8.9+commit.e5eed63a.Darwin.appleclang": "Script.sol/Script.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Script.sol/Script.0.8.16.json"
         }
       }
     },
@@ -599,7 +599,7 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Vm": {
-          "0.8.9+commit.e5eed63a.Darwin.appleclang": "Vm.sol/Vm.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "Vm.sol/Vm.0.8.16.json"
         }
       }
     },
@@ -638,7 +638,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console": {
-          "0.8.9+commit.e5eed63a.Darwin.appleclang": "console.sol/console.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "console.sol/console.0.8.16.json"
         }
       }
     },
@@ -677,7 +677,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console2": {
-          "0.8.9+commit.e5eed63a.Darwin.appleclang": "console2.sol/console2.json"
+          "0.8.16+commit.07a7930e.Darwin.appleclang": "console2.sol/console2.0.8.16.json"
         }
       }
     },
@@ -806,8 +806,8 @@
       }
     },
     "src/Requester.sol": {
-      "lastModificationDate": 1661303678812,
-      "contentHash": "a316a3bedd82bebd732fc84e6839b4ac",
+      "lastModificationDate": 1661354396482,
+      "contentHash": "3ecce840af54749773838ab3c0710dc5",
       "sourceName": "src/Requester.sol",
       "solcConfig": {
         "settings": {
@@ -851,8 +851,8 @@
       }
     },
     "test/Contract.t.sol": {
-      "lastModificationDate": 1661303694234,
-      "contentHash": "90267ed10dc58aafef43206974abfe7f",
+      "lastModificationDate": 1661354431488,
+      "contentHash": "9ee51ed91ce50d90b766d32cbe337218",
       "sourceName": "test/Contract.t.sol",
       "solcConfig": {
         "settings": {

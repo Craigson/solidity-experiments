@@ -20,7 +20,9 @@ contract Requester is RrpRequesterV0 {
     event RequestedUint256Array(bytes32 indexed requestId, uint256 size);
     event ReceivedUint256Array(bytes32 indexed requestId, uint256[] response);
 
-    constructor(address _airnodeRrp) RrpRequesterV0(_airnodeRrp) {}
+    constructor(address _airnodeRrp) RrpRequesterV0(_airnodeRrp) {
+        _owner = msg.sender;
+    }
 
     /// @notice Sets parameters used in requesting QRNG services
     /// @dev No access control is implemented here for convenience. This is not
@@ -41,6 +43,10 @@ contract Requester is RrpRequesterV0 {
         endpointIdUint256 = _endpointIdUint256;
         endpointIdUint256Array = _endpointIdUint256Array;
         sponsorWallet = _sponsorWallet;
+    }
+
+    function requestArrayOfUints(uint256 num) external onlyOwner {
+        _makeRequestUint256Array(num);
     }
 
     /// @notice Requests a `uint256[]`
