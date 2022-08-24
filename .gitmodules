@@ -19,3 +19,6 @@
 [submodule "api3_qrng/lib/forge-std"]
 	path = api3_qrng/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "api3_qrng/lib/openzeppelin-contracts"]
+	path = api3_qrng/lib/openzeppelin-contracts
+	url = https://github.com/openzeppelin/openzeppelin-contracts
