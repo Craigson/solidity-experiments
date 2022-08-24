@@ -5,7 +5,8 @@ libs = ['lib']
 
 remappings = [
     'forge-std/=lib/forge-std/src/', 
-    'airnode-protocol=lib/airnode/packages/airnode-protocol'
+    'airnode-protocol=lib/airnode/packages/airnode-protocol',
+    '@openzeppelin=lib/openzeppelin-contracts'
 ]
 
 # See more config options https://github.com/foundry-rs/foundry/tree/master/config

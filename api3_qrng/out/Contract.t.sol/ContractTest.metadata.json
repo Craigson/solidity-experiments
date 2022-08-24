@@ -1,6 +1,6 @@
 {
   "compiler": {
-    "version": "0.8.16+commit.07a7930e"
+    "version": "0.8.9+commit.e5eed63a"
   },
   "language": "Solidity",
   "output": {
@@ -461,13 +461,55 @@
       "runs": 200
     },
     "remappings": [
+      ":@openzeppelin/=lib/openzeppelin-contracts/",
       ":airnode-protocol/=lib/airnode/packages/airnode-protocol/",
       ":airnode/=lib/airnode/",
       ":ds-test/=lib/forge-std/lib/ds-test/src/",
-      ":forge-std/=lib/forge-std/src/"
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
     ]
   },
   "sources": {
+    "lib/airnode/packages/airnode-protocol/contracts/authorizers/interfaces/IAuthorizerV0.sol": {
+      "keccak256": "0xa38872f5dead4dfc0c8075c245c10197df1ace09415f2e0d5b46bc8511cc3f6d",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://28fb4b462d2d32e498b564b2d80cd9853834986f441e295727d3f0a6b222e141",
+        "dweb:/ipfs/QmeBLpVGm4h3acLHTjCfbfHpRctufnwogzSmL1boHKwS1F"
+      ]
+    },
+    "lib/airnode/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol": {
+      "keccak256": "0x7b770788b2ca3661f9617b887fef62aff0d795cd32e15dc61e05ada5637a1093",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://b66089290bc3b54edfaaad7fae1149c7ddd13009fd9ddc8de2b457e19f805c72",
+        "dweb:/ipfs/QmXLUYLqouCWMGc7hUgaEoNk5dzmcE4aPHmGEWkfd51V6k"
+      ]
+    },
+    "lib/airnode/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol": {
+      "keccak256": "0xa3419ee8a4146a7716355e835102700bfdd12928ab83790d368a344e7819a502",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://b0e27d2e4c3369ae88cd0a19119e64a11947f8360a376f9eea4dfd3ebaa08988",
+        "dweb:/ipfs/QmSVcM4Vn9EFc8f8avGNwJ6qzMf9e4eLZuZmzMYBnsPMdB"
+      ]
+    },
+    "lib/airnode/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol": {
+      "keccak256": "0x6196d12fd828783a299819b75ab3cdf10e84d39b8d8419be28b613e10a7a7602",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://537cf5d45f4b014dff0f3684352feca46ecc4e30f75d761580f51020f192bb9e",
+        "dweb:/ipfs/QmdGxNXV6jJifJvi1KWq7tb2NACRuyUBNQJtEMpMCkQqie"
+      ]
+    },
+    "lib/airnode/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol": {
+      "keccak256": "0x45f937dd2b57942913d4ab1c0e08356fd57cd3d2cca013604adbb8de0e0c898b",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://de925d79e4b4d20665cd64b3fb4f28bbe6798d5316ad7d54a7419df5f8e9ef45",
+        "dweb:/ipfs/QmYWZCDAHKjzTw2UJg7Xngiv5RLjjfVqFvfVYUcaDncJMR"
+      ]
+    },
     "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IAirnodeRrpV0.sol": {
       "keccak256": "0x5306571db1377e8c9dd8cb6e6c7a8deaa2d8ec540e7b2b229e9db5aa5da21277",
       "license": "MIT",
@@ -556,20 +598,36 @@
         "dweb:/ipfs/QmdJBABsuXkvWxVzEyGXsTE3vyfBPXDdw5xvvtUz3JeoYW"
       ]
     },
+    "lib/openzeppelin-contracts/contracts/utils/Strings.sol": {
+      "keccak256": "0xaf159a8b1923ad2a26d516089bceca9bdeaeacd04be50983ea00ba63070f08a3",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://6f2cf1c531122bc7ca96b8c8db6a60deae60441e5223065e792553d4849b5638",
+        "dweb:/ipfs/QmPBdJmBBABMDCfyDjCbdxgiqRavgiSL88SYPGibgbPas9"
+      ]
+    },
+    "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol": {
+      "keccak256": "0x34d5fd3e73f17311fc4ae0ec192c59d5e46d585045017b41a78b8c75ab387d9d",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://11224aad5e5e78cda2e0e8456e27121ece04e725a24d63568fa56f100dc47fb3",
+        "dweb:/ipfs/QmWrpMpotNwYyWcZJUuRcwas9nuy7KYsFTQ1EELUdWQRww"
+      ]
+    },
     "src/Requester.sol": {
-      "keccak256": "0xc2aa27cb70e4e04de0c88ca9adbc7e6c60acd7106a01c9580bb1219cf330a087",
+      "keccak256": "0x8d1c2b89afce52a9aa715d8b6563d14b7094d0467f3d63d1723d6068ddfded94",
       "license": "UNLICENSED",
       "urls": [
-        "bzz-raw://f5eac64325c9cdbccd179d9ccf1c2a9a200f98e3aa8fdaa392aa16485d8f91e9",
-        "dweb:/ipfs/QmUXjE5ijGZtbho8nHw3CKAMqSp7nZwVcBrrAsg1i2iGtz"
+        "bzz-raw://51d54ca2ef2d03a2c9f06481f963fa9aaa383979a43efb47b00535ca7d65f03d",
+        "dweb:/ipfs/QmNuT83XgJHjKYTM4BLkgoWtvWrJAvMvrsJqaAhHPfY4G4"
       ]
     },
     "test/Contract.t.sol": {
-      "keccak256": "0x14f30e63b08a0446820d2f228cb546e5be07c6ec5013f15e8c5a631d74205705",
+      "keccak256": "0xa5af3c9de929495220f45c2f831181e3f1da9306746c4cef091ba1392e9f9340",
       "license": "UNLICENSED",
       "urls": [
-        "bzz-raw://19b9e915102126d5b8fe685c72470338880dcb5cd5fd0c0ea675498c0adc8297",
-        "dweb:/ipfs/QmRYwpPPTjyDupMKrpoH5G4zUF7N9uBWuNVQWr52BumCi2"
+        "bzz-raw://374b011082c735ec9138aab0c5933edb8b3befd531701b83e9b6e35587194e05",
+        "dweb:/ipfs/QmVr9LFiieGAXEheSFoLfSPDEKZNpWZ5rhLYyY8iA7e9D8"
       ]
     }
   },

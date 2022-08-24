@@ -136,17 +136,17 @@
   },
   "ast": {
     "absolutePath": "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/ITemplateUtilsV0.sol",
-    "id": 276,
+    "id": 512,
     "exportedSymbols": {
       "ITemplateUtilsV0": [
-        275
+        511
       ]
     },
     "nodeType": "SourceUnit",
     "src": "32:803:2",
     "nodes": [
       {
-        "id": 227,
+        "id": 463,
         "nodeType": "PragmaDirective",
         "src": "32:23:2",
         "literals": [
@@ -157,12 +157,12 @@
         ]
       },
       {
-        "id": 275,
+        "id": 511,
         "nodeType": "ContractDefinition",
         "src": "57:777:2",
         "nodes": [
           {
-            "id": 237,
+            "id": 473,
             "nodeType": "EventDefinition",
             "src": "90:143:2",
             "anonymous": false,
@@ -170,18 +170,18 @@
             "name": "CreatedTemplate",
             "nameLocation": "96:15:2",
             "parameters": {
-              "id": 236,
+              "id": 472,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 229,
+                  "id": 465,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "templateId",
                   "nameLocation": "137:10:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 237,
+                  "scope": 473,
                   "src": "121:26:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -190,7 +190,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 228,
+                    "id": 464,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "121:7:2",
@@ -203,13 +203,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 231,
+                  "id": 467,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "airnode",
                   "nameLocation": "165:7:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 237,
+                  "scope": 473,
                   "src": "157:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -218,7 +218,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 230,
+                    "id": 466,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "157:7:2",
@@ -232,13 +232,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 233,
+                  "id": 469,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "endpointId",
                   "nameLocation": "190:10:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 237,
+                  "scope": 473,
                   "src": "182:18:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -247,7 +247,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 232,
+                    "id": 468,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "182:7:2",
@@ -260,13 +260,13 @@
                 },
                 {
                   "constant": false,
-                  "id": 235,
+                  "id": 471,
                   "indexed": false,
                   "mutability": "mutable",
                   "name": "parameters",
                   "nameLocation": "216:10:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 237,
+                  "scope": 473,
                   "src": "210:16:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -275,7 +275,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 234,
+                    "id": 470,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "210:5:2",
@@ -291,7 +291,7 @@
             }
           },
           {
-            "id": 248,
+            "id": 484,
             "nodeType": "FunctionDefinition",
             "src": "239:156:2",
             "functionSelector": "32393f2b",
@@ -301,17 +301,17 @@
             "name": "createTemplate",
             "nameLocation": "248:14:2",
             "parameters": {
-              "id": 244,
+              "id": 480,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 239,
+                  "id": 475,
                   "mutability": "mutable",
                   "name": "airnode",
                   "nameLocation": "280:7:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 248,
+                  "scope": 484,
                   "src": "272:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -320,7 +320,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 238,
+                    "id": 474,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "272:7:2",
@@ -334,12 +334,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 241,
+                  "id": 477,
                   "mutability": "mutable",
                   "name": "endpointId",
                   "nameLocation": "305:10:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 248,
+                  "scope": 484,
                   "src": "297:18:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -348,7 +348,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 240,
+                    "id": 476,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "297:7:2",
@@ -361,12 +361,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 243,
+                  "id": 479,
                   "mutability": "mutable",
                   "name": "parameters",
                   "nameLocation": "340:10:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 248,
+                  "scope": 484,
                   "src": "325:25:2",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -375,7 +375,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 242,
+                    "id": 478,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "325:5:2",
@@ -390,17 +390,17 @@
               "src": "262:94:2"
             },
             "returnParameters": {
-              "id": 247,
+              "id": 483,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 246,
+                  "id": 482,
                   "mutability": "mutable",
                   "name": "templateId",
                   "nameLocation": "383:10:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 248,
+                  "scope": 484,
                   "src": "375:18:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -409,7 +409,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 245,
+                    "id": 481,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "375:7:2",
@@ -423,13 +423,13 @@
               ],
               "src": "374:20:2"
             },
-            "scope": 275,
+            "scope": 511,
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 263,
+            "id": 499,
             "nodeType": "FunctionDefinition",
             "src": "401:231:2",
             "functionSelector": "76428c9b",
@@ -439,17 +439,17 @@
             "name": "getTemplates",
             "nameLocation": "410:12:2",
             "parameters": {
-              "id": 252,
+              "id": 488,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 251,
+                  "id": 487,
                   "mutability": "mutable",
                   "name": "templateIds",
                   "nameLocation": "442:11:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 263,
+                  "scope": 499,
                   "src": "423:30:2",
                   "stateVariable": false,
                   "storageLocation": "calldata",
@@ -459,7 +459,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 249,
+                      "id": 485,
                       "name": "bytes32",
                       "nodeType": "ElementaryTypeName",
                       "src": "423:7:2",
@@ -468,7 +468,7 @@
                         "typeString": "bytes32"
                       }
                     },
-                    "id": 250,
+                    "id": 486,
                     "nodeType": "ArrayTypeName",
                     "src": "423:9:2",
                     "typeDescriptions": {
@@ -482,17 +482,17 @@
               "src": "422:32:2"
             },
             "returnParameters": {
-              "id": 262,
+              "id": 498,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 255,
+                  "id": 491,
                   "mutability": "mutable",
                   "name": "airnodes",
                   "nameLocation": "532:8:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 263,
+                  "scope": 499,
                   "src": "515:25:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -502,7 +502,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 253,
+                      "id": 489,
                       "name": "address",
                       "nodeType": "ElementaryTypeName",
                       "src": "515:7:2",
@@ -512,7 +512,7 @@
                         "typeString": "address"
                       }
                     },
-                    "id": 254,
+                    "id": 490,
                     "nodeType": "ArrayTypeName",
                     "src": "515:9:2",
                     "typeDescriptions": {
@@ -524,12 +524,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 258,
+                  "id": 494,
                   "mutability": "mutable",
                   "name": "endpointIds",
                   "nameLocation": "571:11:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 263,
+                  "scope": 499,
                   "src": "554:28:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -539,7 +539,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 256,
+                      "id": 492,
                       "name": "bytes32",
                       "nodeType": "ElementaryTypeName",
                       "src": "554:7:2",
@@ -548,7 +548,7 @@
                         "typeString": "bytes32"
                       }
                     },
-                    "id": 257,
+                    "id": 493,
                     "nodeType": "ArrayTypeName",
                     "src": "554:9:2",
                     "typeDescriptions": {
@@ -560,12 +560,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 261,
+                  "id": 497,
                   "mutability": "mutable",
                   "name": "parameters",
                   "nameLocation": "611:10:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 263,
+                  "scope": 499,
                   "src": "596:25:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -575,7 +575,7 @@
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 259,
+                      "id": 495,
                       "name": "bytes",
                       "nodeType": "ElementaryTypeName",
                       "src": "596:5:2",
@@ -584,7 +584,7 @@
                         "typeString": "bytes"
                       }
                     },
-                    "id": 260,
+                    "id": 496,
                     "nodeType": "ArrayTypeName",
                     "src": "596:7:2",
                     "typeDescriptions": {
@@ -597,13 +597,13 @@
               ],
               "src": "501:130:2"
             },
-            "scope": 275,
+            "scope": 511,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           },
           {
-            "id": 274,
+            "id": 510,
             "nodeType": "FunctionDefinition",
             "src": "638:194:2",
             "functionSelector": "0a631576",
@@ -613,17 +613,17 @@
             "name": "templates",
             "nameLocation": "647:9:2",
             "parameters": {
-              "id": 266,
+              "id": 502,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 265,
+                  "id": 501,
                   "mutability": "mutable",
                   "name": "templateId",
                   "nameLocation": "665:10:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 274,
+                  "scope": 510,
                   "src": "657:18:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -632,7 +632,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 264,
+                    "id": 500,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "657:7:2",
@@ -647,17 +647,17 @@
               "src": "656:20:2"
             },
             "returnParameters": {
-              "id": 273,
+              "id": 509,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 268,
+                  "id": 504,
                   "mutability": "mutable",
                   "name": "airnode",
                   "nameLocation": "745:7:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 274,
+                  "scope": 510,
                   "src": "737:15:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -666,7 +666,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 267,
+                    "id": 503,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "737:7:2",
@@ -680,12 +680,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 270,
+                  "id": 506,
                   "mutability": "mutable",
                   "name": "endpointId",
                   "nameLocation": "774:10:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 274,
+                  "scope": 510,
                   "src": "766:18:2",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -694,7 +694,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 269,
+                    "id": 505,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "766:7:2",
@@ -707,12 +707,12 @@
                 },
                 {
                   "constant": false,
-                  "id": 272,
+                  "id": 508,
                   "mutability": "mutable",
                   "name": "parameters",
                   "nameLocation": "811:10:2",
                   "nodeType": "VariableDeclaration",
-                  "scope": 274,
+                  "scope": 510,
                   "src": "798:23:2",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -721,7 +721,7 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 271,
+                    "id": 507,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
                     "src": "798:5:2",
@@ -735,7 +735,7 @@
               ],
               "src": "723:108:2"
             },
-            "scope": 275,
+            "scope": 511,
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
@@ -748,11 +748,11 @@
         "contractKind": "interface",
         "fullyImplemented": false,
         "linearizedBaseContracts": [
-          275
+          511
         ],
         "name": "ITemplateUtilsV0",
         "nameLocation": "67:16:2",
-        "scope": 276,
+        "scope": 512,
         "usedErrors": []
       }
     ],

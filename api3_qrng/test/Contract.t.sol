@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.13;
+pragma solidity ^0.8.9;
 
 import "forge-std/Test.sol";
 
@@ -11,7 +11,7 @@ contract ContractTest is Test {
     AirnodeRrpV0 airnode;
 
     function setUp() public {
-        airnode = new AirAirnodeRrpV0();
+        airnode = new AirnodeRrpV0();
         requester = new Requester(address(airnode));
     }
 

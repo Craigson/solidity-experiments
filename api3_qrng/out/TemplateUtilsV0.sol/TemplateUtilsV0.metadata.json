@@ -1,0 +1,213 @@
+{
+  "compiler": {
+    "version": "0.8.9+commit.e5eed63a"
+  },
+  "language": "Solidity",
+  "output": {
+    "abi": [
+      {
+        "anonymous": false,
+        "inputs": [
+          {
+            "indexed": true,
+            "internalType": "bytes32",
+            "name": "templateId",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "internalType": "address",
+            "name": "airnode",
+            "type": "address"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes32",
+            "name": "endpointId",
+            "type": "bytes32"
+          },
+          {
+            "indexed": false,
+            "internalType": "bytes",
+            "name": "parameters",
+            "type": "bytes"
+          }
+        ],
+        "name": "CreatedTemplate",
+        "type": "event"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "airnode",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "endpointId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "parameters",
+            "type": "bytes"
+          }
+        ],
+        "name": "createTemplate",
+        "outputs": [
+          {
+            "internalType": "bytes32",
+            "name": "templateId",
+            "type": "bytes32"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "bytes32[]",
+            "name": "templateIds",
+            "type": "bytes32[]"
+          }
+        ],
+        "name": "getTemplates",
+        "outputs": [
+          {
+            "internalType": "address[]",
+            "name": "airnodes",
+            "type": "address[]"
+          },
+          {
+            "internalType": "bytes32[]",
+            "name": "endpointIds",
+            "type": "bytes32[]"
+          },
+          {
+            "internalType": "bytes[]",
+            "name": "parameters",
+            "type": "bytes[]"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "bytes32",
+            "name": "",
+            "type": "bytes32"
+          }
+        ],
+        "name": "templates",
+        "outputs": [
+          {
+            "internalType": "address",
+            "name": "airnode",
+            "type": "address"
+          },
+          {
+            "internalType": "bytes32",
+            "name": "endpointId",
+            "type": "bytes32"
+          },
+          {
+            "internalType": "bytes",
+            "name": "parameters",
+            "type": "bytes"
+          }
+        ],
+        "stateMutability": "view",
+        "type": "function"
+      }
+    ],
+    "devdoc": {
+      "kind": "dev",
+      "methods": {
+        "createTemplate(address,bytes32,bytes)": {
+          "details": "A specific set of request parameters will always have the same template ID. This means a few things: (1) You can compute the expected ID of a template before creating it, (2) Creating a new template with the same parameters will overwrite the old one and return the same ID, (3) After you query a template with its ID, you can verify its integrity by applying the hash and comparing the result with the ID.",
+          "params": {
+            "airnode": "Airnode address",
+            "endpointId": "Endpoint ID (allowed to be `bytes32(0)`)",
+            "parameters": "Static request parameters (i.e., parameters that will not change between requests, unlike the dynamic parameters determined at request-time)"
+          },
+          "returns": {
+            "templateId": "Request template ID"
+          }
+        },
+        "getTemplates(bytes32[])": {
+          "details": "Does not revert if the templates being indexed do not exist",
+          "params": {
+            "templateIds": "Request template IDs"
+          },
+          "returns": {
+            "airnodes": "Array of Airnode addresses",
+            "endpointIds": "Array of endpoint IDs",
+            "parameters": "Array of request parameters"
+          }
+        }
+      },
+      "title": "Contract that implements request templates",
+      "version": 1
+    },
+    "userdoc": {
+      "kind": "user",
+      "methods": {
+        "createTemplate(address,bytes32,bytes)": {
+          "notice": "Creates a request template with the given parameters, addressable by the ID it returns"
+        },
+        "getTemplates(bytes32[])": {
+          "notice": "A convenience method to retrieve multiple templates with a single call"
+        },
+        "templates(bytes32)": {
+          "notice": "Called to get a template"
+        }
+      },
+      "version": 1
+    }
+  },
+  "settings": {
+    "compilationTarget": {
+      "lib/airnode/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol": "TemplateUtilsV0"
+    },
+    "evmVersion": "london",
+    "libraries": {},
+    "metadata": {
+      "bytecodeHash": "ipfs"
+    },
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "remappings": [
+      ":@openzeppelin/=lib/openzeppelin-contracts/",
+      ":airnode-protocol/=lib/airnode/packages/airnode-protocol/",
+      ":airnode/=lib/airnode/",
+      ":ds-test/=lib/forge-std/lib/ds-test/src/",
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
+    ]
+  },
+  "sources": {
+    "lib/airnode/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol": {
+      "keccak256": "0x6196d12fd828783a299819b75ab3cdf10e84d39b8d8419be28b613e10a7a7602",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://537cf5d45f4b014dff0f3684352feca46ecc4e30f75d761580f51020f192bb9e",
+        "dweb:/ipfs/QmdGxNXV6jJifJvi1KWq7tb2NACRuyUBNQJtEMpMCkQqie"
+      ]
+    },
+    "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/ITemplateUtilsV0.sol": {
+      "keccak256": "0x4212b264303a78b3c3ed0230cf23b7c3ca58bccec936eccd1d4924347b0fea47",
+      "license": "MIT",
+      "urls": [
+        "bzz-raw://eaf9f61c252264854cbdc409692f99d00327ad7ca9cd4bc17f3b0164e4bc8d76",
+        "dweb:/ipfs/QmYWvPeNGjND5kYPTMhU6RJRwgkHWqvYYoN24Lnbjndj8d"
+      ]
+    }
+  },
+  "version": 1
+}

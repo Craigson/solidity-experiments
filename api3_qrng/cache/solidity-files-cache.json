@@ -11,6 +11,219 @@
     ]
   },
   "files": {
+    "lib/airnode/packages/airnode-protocol/contracts/authorizers/interfaces/IAuthorizerV0.sol": {
+      "lastModificationDate": 1661263950412,
+      "contentHash": "09be2dfecb6aeda837207f6e2e805af3",
+      "sourceName": "lib/airnode/packages/airnode-protocol/contracts/authorizers/interfaces/IAuthorizerV0.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "IAuthorizerV0": {
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "IAuthorizerV0.sol/IAuthorizerV0.json"
+        }
+      }
+    },
+    "lib/airnode/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol": {
+      "lastModificationDate": 1661263950413,
+      "contentHash": "5d771a5da471683535ae3c96249c9b74",
+      "sourceName": "lib/airnode/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/airnode/packages/airnode-protocol/contracts/authorizers/interfaces/IAuthorizerV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IAirnodeRrpV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IAuthorizationUtilsV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/ITemplateUtilsV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IWithdrawalUtilsV0.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol"
+      ],
+      "versionRequirement": "=0.8.9",
+      "artifacts": {
+        "AirnodeRrpV0": {
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "AirnodeRrpV0.sol/AirnodeRrpV0.json"
+        }
+      }
+    },
+    "lib/airnode/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol": {
+      "lastModificationDate": 1661263950414,
+      "contentHash": "9116574cb5eb0d482d0fd11f6a655bb1",
+      "sourceName": "lib/airnode/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/airnode/packages/airnode-protocol/contracts/authorizers/interfaces/IAuthorizerV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IAuthorizationUtilsV0.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "AuthorizationUtilsV0": {
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "AuthorizationUtilsV0.sol/AuthorizationUtilsV0.json"
+        }
+      }
+    },
+    "lib/airnode/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol": {
+      "lastModificationDate": 1661263950414,
+      "contentHash": "4903b5747290aaea44601bea98d5fdc5",
+      "sourceName": "lib/airnode/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/ITemplateUtilsV0.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "TemplateUtilsV0": {
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "TemplateUtilsV0.sol/TemplateUtilsV0.json"
+        }
+      }
+    },
+    "lib/airnode/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol": {
+      "lastModificationDate": 1661263950414,
+      "contentHash": "de05e9cdc36786d4006b4c19fd362880",
+      "sourceName": "lib/airnode/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IWithdrawalUtilsV0.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "WithdrawalUtilsV0": {
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "WithdrawalUtilsV0.sol/WithdrawalUtilsV0.json"
+        }
+      }
+    },
     "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IAirnodeRrpV0.sol": {
       "lastModificationDate": 1661263950414,
       "contentHash": "956233427805a2b9c588d50344326194",
@@ -50,7 +263,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IAirnodeRrpV0": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "IAirnodeRrpV0.sol/IAirnodeRrpV0.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "IAirnodeRrpV0.sol/IAirnodeRrpV0.0.8.9.json"
         }
       }
     },
@@ -89,7 +302,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IAuthorizationUtilsV0": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "IAuthorizationUtilsV0.sol/IAuthorizationUtilsV0.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "IAuthorizationUtilsV0.sol/IAuthorizationUtilsV0.0.8.9.json"
         }
       }
     },
@@ -128,7 +341,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "ITemplateUtilsV0": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "ITemplateUtilsV0.sol/ITemplateUtilsV0.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "ITemplateUtilsV0.sol/ITemplateUtilsV0.0.8.9.json"
         }
       }
     },
@@ -167,7 +380,7 @@
       "versionRequirement": "^0.8.0",
       "artifacts": {
         "IWithdrawalUtilsV0": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "IWithdrawalUtilsV0.sol/IWithdrawalUtilsV0.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "IWithdrawalUtilsV0.sol/IWithdrawalUtilsV0.0.8.9.json"
         }
       }
     },
@@ -250,7 +463,7 @@
       "versionRequirement": ">=0.5.0",
       "artifacts": {
         "DSTest": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "test.sol/DSTest.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "test.sol/DSTest.json"
         }
       }
     },
@@ -293,7 +506,7 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Script": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "Script.sol/Script.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "Script.sol/Script.json"
         }
       }
     },
@@ -338,16 +551,16 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Test": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "Test.sol/Test.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "Test.sol/Test.json"
         },
         "stdError": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "Test.sol/stdError.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "Test.sol/stdError.json"
         },
         "stdMath": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "Test.sol/stdMath.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "Test.sol/stdMath.json"
         },
         "stdStorage": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "Test.sol/stdStorage.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "Test.sol/stdStorage.json"
         }
       }
     },
@@ -386,7 +599,7 @@
       "versionRequirement": ">=0.6.0, <0.9.0",
       "artifacts": {
         "Vm": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "Vm.sol/Vm.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "Vm.sol/Vm.json"
         }
       }
     },
@@ -425,7 +638,7 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "console.sol/console.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "console.sol/console.json"
         }
       }
     },
@@ -464,7 +677,87 @@
       "versionRequirement": ">=0.4.22, <0.9.0",
       "artifacts": {
         "console2": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "console2.sol/console2.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "console2.sol/console2.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1661303426405,
+      "contentHash": "cf46906c4035f51639a22265066a9e78",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "Strings": {
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "Strings.sol/Strings.json"
+        }
+      }
+    },
+    "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol": {
+      "lastModificationDate": 1661303426406,
+      "contentHash": "58ce80c4c4302ad24a32d1494228151a",
+      "sourceName": "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
+      "solcConfig": {
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "metadata": {
+            "bytecodeHash": "ipfs"
+          },
+          "outputSelection": {
+            "*": {
+              "": [
+                "ast"
+              ],
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ]
+            }
+          },
+          "evmVersion": "london",
+          "libraries": {}
+        }
+      },
+      "imports": [
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol"
+      ],
+      "versionRequirement": "^0.8.0",
+      "artifacts": {
+        "ECDSA": {
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "ECDSA.sol/ECDSA.json"
         }
       }
     },
@@ -513,8 +806,8 @@
       }
     },
     "src/Requester.sol": {
-      "lastModificationDate": 1661302975891,
-      "contentHash": "682d4b5acacf5646ccad9fce1a168b68",
+      "lastModificationDate": 1661303678812,
+      "contentHash": "a316a3bedd82bebd732fc84e6839b4ac",
       "sourceName": "src/Requester.sol",
       "solcConfig": {
         "settings": {
@@ -550,7 +843,7 @@
         "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IWithdrawalUtilsV0.sol",
         "lib/airnode/packages/airnode-protocol/contracts/rrp/requesters/RrpRequesterV0.sol"
       ],
-      "versionRequirement": "^0.8.13",
+      "versionRequirement": "^0.8.9",
       "artifacts": {
         "Requester": {
           "0.8.16+commit.07a7930e.Darwin.appleclang": "Requester.sol/Requester.json"
@@ -558,8 +851,8 @@
       }
     },
     "test/Contract.t.sol": {
-      "lastModificationDate": 1661302796579,
-      "contentHash": "39fc24bf22d21345734426fe4386d910",
+      "lastModificationDate": 1661303694234,
+      "contentHash": "90267ed10dc58aafef43206974abfe7f",
       "sourceName": "test/Contract.t.sol",
       "solcConfig": {
         "settings": {
@@ -589,6 +882,11 @@
         }
       },
       "imports": [
+        "lib/airnode/packages/airnode-protocol/contracts/authorizers/interfaces/IAuthorizerV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/AirnodeRrpV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/AuthorizationUtilsV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/TemplateUtilsV0.sol",
+        "lib/airnode/packages/airnode-protocol/contracts/rrp/WithdrawalUtilsV0.sol",
         "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IAirnodeRrpV0.sol",
         "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/IAuthorizationUtilsV0.sol",
         "lib/airnode/packages/airnode-protocol/contracts/rrp/interfaces/ITemplateUtilsV0.sol",
@@ -600,12 +898,14 @@
         "lib/forge-std/src/Vm.sol",
         "lib/forge-std/src/console.sol",
         "lib/forge-std/src/console2.sol",
+        "lib/openzeppelin-contracts/contracts/utils/Strings.sol",
+        "lib/openzeppelin-contracts/contracts/utils/cryptography/ECDSA.sol",
         "src/Requester.sol"
       ],
-      "versionRequirement": "^0.8.13",
+      "versionRequirement": "^0.8.9",
       "artifacts": {
         "ContractTest": {
-          "0.8.16+commit.07a7930e.Darwin.appleclang": "Contract.t.sol/ContractTest.json"
+          "0.8.9+commit.e5eed63a.Darwin.appleclang": "Contract.t.sol/ContractTest.json"
         }
       }
     }

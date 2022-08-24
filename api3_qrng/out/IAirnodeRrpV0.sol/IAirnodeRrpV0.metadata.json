@@ -841,10 +841,12 @@
       "runs": 200
     },
     "remappings": [
+      ":@openzeppelin/=lib/openzeppelin-contracts/",
       ":airnode-protocol/=lib/airnode/packages/airnode-protocol/",
       ":airnode/=lib/airnode/",
       ":ds-test/=lib/forge-std/lib/ds-test/src/",
-      ":forge-std/=lib/forge-std/src/"
+      ":forge-std/=lib/forge-std/src/",
+      ":openzeppelin-contracts/=lib/openzeppelin-contracts/"
     ]
   },
   "sources": {
