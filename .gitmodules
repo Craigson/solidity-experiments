@@ -16,3 +16,6 @@
 [submodule "ethernaut-x-foundry/lib/forge-std"]
 	path = ethernaut-x-foundry/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "api3_qrng/lib/forge-std"]
+	path = api3_qrng/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
