@@ -18,7 +18,7 @@ contract ContractTest is Test {
         0xfb6d017bb87991b7495f563db3c8cf59ff87b09781947bb1e417006ad7f55a78;
     bytes32 endpointIdUint256Array =
         0x27cc2713e7f968e4e86ed274a051a5c8aaee9cca66946f23af6f29ecea9704c3;
-    address airnodeAddress = 0x9d3C147cA16DB954873A498e0af5852AB39139f2; // for the offchain node?
+    address airnodeAddress = 0x9d3C147cA16DB954873A498e0af5852AB39139f2; // this needs to be derived from the MNEMONIC in the secrets.env file
 
     function setUp() public {
         airnode = new AirnodeRrpV0();
