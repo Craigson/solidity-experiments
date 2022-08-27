@@ -59,7 +59,8 @@ contract Requester is RrpRequesterV0 {
             sponsorWallet,
             address(this),
             this.fulfillUint256Array.selector,
-            // Using Airnode ABI to encode the parameters
+            // Using Airnode ABI to encode the parameters, where `1u`is the encoding type + uint256
+            // meaning 1 parameter of type uint256, parameter named size
             abi.encode(bytes32("1u"), bytes32("size"), size)
         );
         expectingRequestWithIdToBeFulfilled[requestId] = true;

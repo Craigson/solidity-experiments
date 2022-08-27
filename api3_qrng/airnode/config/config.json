@@ -39,7 +39,7 @@
             "enabled": false
         },
         "logFormat": "plain",
-        "logLevel": "INFO",
+        "logLevel": "DEBUG",
         "nodeVersion": "0.7.5",
         "stage": "dev"
     },
@@ -48,7 +48,7 @@
             {
                 "endpointId": "0x13dea3311fe0d6b84f4daeab831befbc49e19e6494c41e9e065a09c3c68f43b6",
                 "oisTitle": "Currency Converter API",
-                "endpointName": "convertToUSD"
+                "endpointName": "/single"
             }
         ],
         "http": [],
@@ -58,29 +58,26 @@
     "ois": [
         {
             "oisFormat": "1.0.0",
-            "version": "1.2.3",
-            "title": "Currency Converter API",
+            "title": "Mock QRNG",
+            "version": "0.1.0",
             "apiSpecifications": {
                 "servers": [
                     {
-                        "url": "http://localhost:5000"
+                        "url": "http://localhost:5000/v1"
                     }
                 ],
                 "paths": {
-                    "/convert": {
+                    "/single": {
+                        "get": {
+                            "parameters": []
+                        }
+                    },
+                    "/batch": {
                         "get": {
                             "parameters": [
                                 {
                                     "in": "query",
-                                    "name": "from"
-                                },
-                                {
-                                    "in": "query",
-                                    "name": "to"
-                                },
-                                {
-                                    "in": "query",
-                                    "name": "amount"
+                                    "name": "size"
                                 }
                             ]
                         }
@@ -88,62 +85,53 @@
                 },
                 "components": {
                     "securitySchemes": {
-                        "Currency Converter Security Scheme": {
-                            "in": "query",
-                            "type": "apiKey",
-                            "name": "access_key"
+                        "<FILL_SECURITY_SCHEME_NAME>": {
+                            "in": "<FILL_*>",
+                            "type": "<FILL_*>",
+                            "name": "<FILL_*>"
                         }
                     }
                 },
                 "security": {
-                    "Currency Converter Security Scheme": []
+                    "<FILL_SECURITY_SCHEME_NAME>": []
                 }
             },
             "endpoints": [
                 {
-                    "name": "convertToUSD",
+                    "name": "<FILL_*>",
                     "operation": {
-                        "method": "get",
-                        "path": "/convert"
+                        "method": "<FILL_METHOD>",
+                        "path": "<FILL_PATH>"
                     },
                     "fixedOperationParameters": [
                         {
                             "operationParameter": {
-                                "in": "query",
-                                "name": "to"
+                                "in": "<FILL_OPERATION_PARAMETER_1_IN>",
+                                "name": "<FILL_OPERATION_PARAMETER_1_NAME>"
                             },
-                            "value": "USD"
+                            "value": "<FILL_*>"
                         }
                     ],
                     "reservedParameters": [
                         {
-                            "name": "_type",
-                            "fixed": "int256"
+                            "name": "<FILL_*>"
                         },
                         {
-                            "name": "_path",
-                            "fixed": "result"
+                            "name": "<FILL_*>"
                         },
                         {
-                            "name": "_times",
-                            "default": "1000000"
+                            "name": "<FILL_*>"
+                        },
+                        {
+                            "name": "<FILL_*>"
                         }
                     ],
                     "parameters": [
                         {
-                            "name": "from",
-                            "default": "EUR",
+                            "name": "<FILL_*>",
                             "operationParameter": {
-                                "in": "query",
-                                "name": "from"
-                            }
-                        },
-                        {
-                            "name": "amount",
-                            "default": "1",
-                            "operationParameter": {
-                                "name": "amount",
-                                "in": "query"
+                                "in": "<FILL_OPERATION_PARAMETER_2_IN>",
+                                "name": "<FILL_OPERATION_PARAMETER_2_NAME>"
                             }
                         }
                     ]
