@@ -12,8 +12,8 @@ My solutions to the challenges can be located in the `src/tests/` folder, using 
 | complete | [2. Fallout](src/Fallout)              |
 | complete | [3. CoinFlip](src/CoinFlip)            |
 | complete | [4. Telephone](src/Telephone)          |
-| ---      | [5. Token](src/Token)                  |
-| ---      | [6. Delegation](src/Delegation)        |
+| complete      | [5. Token](src/Token)                  |
+| complete      | [6. Delegation](src/Delegation)        |
 | ---      | [7. Force](src/Force)                  |
 | ---      | [8. Vault](src/Vault)                  |
 | ---      | [9. King](src/King)                    |
